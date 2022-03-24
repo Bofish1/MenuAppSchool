@@ -21,6 +21,10 @@ namespace Menu.Controllers
 
         public IActionResult Index()
         {
+            return View();
+        }
+        public IActionResult List()
+        {
             var foods = context.Foods.Include(m => m.category).OrderBy(m => m.Name).ToList();
             return View(foods);
         }

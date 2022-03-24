@@ -54,7 +54,6 @@ C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\staticweb
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Menu.TagHelpers.input.cache
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Menu.TagHelpers.output.cache
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Menu.RazorCoreGenerate.cache
-C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -69,5 +68,14 @@ C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Menu.dll
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\ref\Menu.dll
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Menu.pdb
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Menu.genruntimeconfig.cache
-C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Menu\Edit.cshtml.g.cs
-C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Menu\Delete.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\Home\Index.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\Menu\Delete.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\Menu\Edit.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\Shared\Error.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\_ViewImports.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\_ViewStart.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Home\List.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs

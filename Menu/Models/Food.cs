@@ -14,7 +14,7 @@ namespace Menu.Models
 
         [Required(ErrorMessage = "Please Enter a Price.")]
         [Range(0,1000, ErrorMessage = "Price must be between 0 and 1000")]
-        public decimal? Price { get; set; }
+        public decimal Price { get; set; }
 
         [Required(ErrorMessage = "Please enter a category.")]
         public string CategoryId { get; set; }
