@@ -1,0 +1,35 @@
+﻿@model List<Food>
+@{
+    ViewBag.Title = "Menu";
+}
+
+<h2> Employee Menu</h2>
+
+<a asp-controller="Menu" asp-action="Add">Add Food</a>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var food in Model)
+        {
+            <tr>
+                <td>@food.Name</td>
+                <td>@food.Description</td>
+                <td>@food.category.Name</td>
+                <td>@food.Price</td>
+                <td>
+                    <a asp-controller="Menu" asp-action="Edit"
+                    asp-route-id="@food.FoodId">Edit</a><!--Routes the ID of what is clicked-->
+                    <a asp-controller="Menu" asp-action="Delete"
+                    asp-route-id="@food.FoodId">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

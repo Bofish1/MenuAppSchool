@@ -1,0 +1,28 @@
+﻿@model List<Food>
+@{
+    ViewBag.Title = "Menu";
+}
+<h2>Menu</h2>
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>Price</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var food in Model)
+        {
+            //ViewBag.Price = food.Price;
+            <tr>
+                <td>@food.Name</td>
+                <td>@food.Description</td>
+                <td>@food.category.Name</td>
+                <td>@food.Price.ToString("C")</td>
+            </tr>
+        }
+    </tbody>
+</table>
