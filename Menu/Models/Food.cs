@@ -16,6 +16,9 @@ namespace Menu.Models
         [Range(0,1000, ErrorMessage = "Price must be between 0 and 1000")]
         public decimal Price { get; set; }
 
+        [Required(ErrorMessage = "please enter your images name with the appropriate extention.")]
+        public string ImagePath { get; set; }
+
         [Required(ErrorMessage = "Please enter a category.")]
         public string CategoryId { get; set; }
         public Category category { get; set; }

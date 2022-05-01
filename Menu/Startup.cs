@@ -21,6 +21,9 @@ namespace Menu
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMemoryCache();
+            services.AddSession();
+
             services.AddControllersWithViews();
             services.AddDbContext<MenuContext>(options => options.UseSqlServer(Configuration.GetConnectionString("MenuContext")));
         }
@@ -40,6 +43,9 @@ namespace Menu
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+
+            //See page 325
+            app.UseSession();
 
             app.UseRouting();
 

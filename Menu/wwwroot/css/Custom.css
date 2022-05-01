@@ -1,3 +1,15 @@
 ﻿body {
-    background-color: lightcoral
+    background-color: rgb(212, 21, 47);
 }
+
+.navbar-brand {
+    font-family: 'Rye';
+    font-size: 40px;
+}
+
+.center {
+    display: block;
+    width: 100%;
+}
+
+

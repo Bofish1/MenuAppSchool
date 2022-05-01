@@ -79,3 +79,5 @@ C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Are
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Areas\Employee\Views\_ViewStart.cshtml.g.cs
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Home\List.cshtml.g.cs
 C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Order\Index.cshtml.g.cs
+C:\Users\Bozie\Desktop\School\C#IV\Projects\Menu\Menu\obj\Debug\net5.0\Razor\Views\Home\Details.cshtml.g.cs

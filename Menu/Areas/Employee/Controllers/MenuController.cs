@@ -63,6 +63,7 @@ namespace Menu.Areas.Employee.Controllers
         {
             context.Foods.Remove(food);
             context.SaveChanges();
+            TempData["message"] = $"{food.Name} was removed from the menu.";
             return RedirectToAction("Index", "Home");
         }
     }
