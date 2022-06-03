@@ -34,8 +34,9 @@
                     </ul>
                     <ul class="navbar-nav text-right">
                         <li class="nav-item">
-                            <a class="nav-link text-white-50" asp-area="Employee" asp-controller="Home" 
-                               asp-action="Index" onclick="adminCheck()">Employee Test</a>
+                            <!--<a class="nav-link text-white-50" asp-area="Employee" asp-controller="Home" 
+                               asp-action="Index" onclick="adminCheck()">Employee Test</a>-->
+                            <a id="admin" class="nav-link text-white-50" onclick="adminCheck(this)" href="#">Admin</a><!--Needs to be more secure-->
                         </li>
                     </ul>
                 </div>
@@ -58,9 +59,16 @@
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     <script>
-        function adminCheck() {
-            let passWord = prompt("Please enter your password:", "Password");
-            //**Logic here can redirect the user somewhere else if they don't have a password
+        function adminCheck(a) {
+            let passWord = prompt("Please enter your password:", "Password is Admin");
+            if (passWord == "Admin") {
+                alert("Welcome");
+                a.setAttribute('href', 'https://localhost:44327/Employee');
+            }
+            else {
+                alert("Incorrect Password");
+                a.setAttribute('href', 'https://localhost:44327/');
+            }
         }
     </script>
     @await RenderSectionAsync("Scripts", required: false)

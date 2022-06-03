@@ -4,29 +4,28 @@
 <div class="text-center">
     <h2>My Order</h2>
     <div class="col-sm-10">
-        <table class="table table-bordered table-striped mt-2">
+        <table class="table table-bordered table-striped mt-2" border="1" bgcolor="white">
             <thead>
                 <tr>
                     <th>Name</th>
                     <th>Price</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
                 @foreach (Food food in Model.Foods)
                 {
-                    int count = 0;
                     <tr>
                         <td>@food.Name</td>
                         <td>@food.Price.ToString("c")</td>
                         <td>
                             <form asp-controller="Home" asp-action="Remove">
-                                <button type="submit" name="count" value="@count">Remove</button>
+                                <button class="btn btn-primary"  type="submit" name="f" value="@food.Name">Remove</button>
                             </form>
                         </td>
                         
                     </tr>
                     ViewBag.Total += food.Price;
-                    count++;
                 }
                 <tr>
                     <td>Total</td>

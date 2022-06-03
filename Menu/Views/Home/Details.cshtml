@@ -1,10 +1,11 @@
 ﻿@model FoodViewModel
 
-<form asp-action="Add" method="post">
+
+<form asp-action="Add" method="post" style="margin: auto; width: 400px;">
     <h3>@Model.Food.Name</h3>
-    <img src="~/images/@Model.Food.ImagePath" alt="" width="200" height="200" />
+    <img src="~/images/@Model.Food.ImagePath" alt="" width="200" height="200"/>
     <p>@Model.Food.Description</p>
-    <a asp-action="Index">Return Home</a>
-    <button type="submit">Add To Order</button>
+    <a class="btn btn-primary" asp-action="Index">Return Home</a>
+    <button class="btn btn-primary" type="submit">Add To Order</button>
     <input type="hidden" asp-for="Food.FoodId" />
 </form>

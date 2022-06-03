@@ -62,35 +62,33 @@ namespace Menu.Controllers
             var foods = session.GetMyFood();
             foods.Add(model.Food);
             session.SetMyFoods(foods);
+            
 
             return RedirectToAction("Index","Order"); //Returns you to the menu "cart"
         }
 
-       /* public RedirectToActionResult Remove(FoodListViewModel model)
+        
+        //This is a "DuckTape" version of manipulating the session, it works for now might fix later
+        //Consider making a "proper" shopping cart
+        public RedirectToActionResult Remove(string f)
         {
-           model.Food = context.Foods
-               .Where(t => t.FoodId == model.Food.FoodId)
-               .FirstOrDefault();
+
 
             var session = new MenuSession(HttpContext.Session);
             var foods = session.GetMyFood();
-            foods.Remove(model.Food);
+            int count = 0;
+            foreach (Food food in foods.ToList<Food>())
+            {
+                if(food.Name == f)
+                {
+                    foods.RemoveAt(count);
+                    break;//Needed to stop the list from trying to delete all items of the same name resulting in index out of bounds
+                }
+                count++;
+            }
             session.SetMyFoods(foods);
 
-            return RedirectToAction("Index", "Order"); //Returns you to the menu "cart"
-        }*/
-
-        public RedirectToActionResult Remove(int count)
-        {
-          
-
-            var session = new MenuSession(HttpContext.Session);
-            var foods = session.GetMyFood();
-            foods.Reverse();//So that list will delete in the correct order
-            foods.RemoveAt(count);
-            session.SetMyFoods(foods);
-
-            return RedirectToAction("Index", "Order"); //Returns you to the menu "cart"
+            return RedirectToAction("Index", "Order"); 
         }
     }
 }
